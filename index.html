@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <!-- Библиотека jQuery --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script> 
+    <!-- Последняя скомпилированная версия JavaScript --> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    
+    <script src="jquery-min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="animate.min.css">
+    <script src="js/main.js"></script>
+    <script src="js/jquery-min.js"></script>
+
+</head>
+
+<body style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+   
+    <div class="row" >
+        <div class="col-sm-6"> <p><img class="logo" src ="LogoHeader.png" "></p> </div> 
+        <div class="col-sm-6 qwe"> 
+            <div class="col-sm-3" ><p><h3>Home</h3></p></div>
+            <div class="col-sm-3" ><p><h3>Products</h3></p></div>
+            <div class="col-sm-3" id="click" onclick="addEffect1()"><p><h3>Services</h3></p></div>
+            <div class="col-sm-3" id="click" onclick="addEffect2()"><p><h3>Contact</h3></p></div>
+        </div>
+    </div>
+
+    <div class="container-fluid"> 
+        <div class="row">
+            <div class="col-sm-2 slider" style="padding-top: 150px;">
+                <img src="ArrowLeftSlider.png" >
+            </div>
+
+            <div class="col-sm-4" ><img class="iphone" src="IPhoneSlider.png"  ></div>
+
+            <div class="col-sm-4 text" style="padding: 100px; "><p><h1>Lorem Ipsum is simply</h1></p>
+                <p>dummy text of the
+                printing & typesetting</p>
+                <p><a href = ""><img class="box" src="ButtonHeader.png"></a></p>
+            </div>
+
+            <div class="col-sm-2 slider" style="padding-top: 150px;">
+                <img src="ArrowRightSlider.png" >
+            </div>
+         </div>  
+    </div>
+
+    <div class="container" style="text-align: center; padding-top: 50px;">
+        <div class="row" id="abcd">
+            <div class="col-sm-12 col-md-4 text"><p><img src = "Product1.png" width="35%"></p>
+                <p><h3 style="color: blue;">Contary to popular</h3></p>
+                <p>Lorem Ipsum is not simply random text.</p>
+                <p>It has roots in a piece.</p>
+            </div>
+
+        <div class="col-sm-12 col-md-4 text"><p><img src = "Product2.png" width="35%"></p>
+            <p><h3 style="color: blue;">Contary to popular</h3></p>
+            <p>Lorem Ipsum is not simply random text.</p>
+            <p>It has roots in a piece.</p>
+        </div>
+
+        <div class="col-sm-12 col-md-4 text">         
+            <p><img src = "Product3.png" width="35%"></p>
+            <p><h3 style="color: blue;">Contary to popular</h3></p>
+            <p>Lorem Ipsum is not simply random text.</p>
+            <p>It has roots in a piece.</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="container prod" style = "text-align: center; ">
+        <div class="row">
+        <div class="col-sm-4" style="text-align: center">
+            <p><h1 style="color: gray;">The Shopping Cart</h1></p>
+            <p><img class="box"  src = "ShoppingCart.png"></p>
+        </div>
+        <div class="col-sm-8 text">
+            <p><h2 style="text-align: center; ">Some bullet text here</h2></p>
+            <p style="text-align: left;">text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
+                text text text text text text text text text text text text text text text text text text text text text text text text text
+                text text text text text text text text text text text text text text text text text text text text text text text text text
+                text text text text text text text text text text text text text text text text text text text text text text text text text
+                text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+        </div>
+        </div>
+    </div>
+
+    <form id="form" action="#">
+        <div class="container prod" style = "text-align: center; padding-top: 100px; padding-bottom: 100px;">
+            <div class="row">
+                <!--Begining of the Main Form-->
+                <div class="col-md-10 orderInfo">
+                        <h2 style="color: gray;">Информация</h2>
+                        <div class="row" style="padding-top: 5px;">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3">Имя</div>
+                            <div class="col-md-3"><input class="form-control" id="first" type="text" onblur="checkFirst();" required="" minlength="2"></div>
+                            <div class="col-md-3"><span id="first_Check"></span></div>
+                        </div>
+                        <div class="row" style="padding-top: 5px;">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3">Фамилия</div>
+                            <div class="col-md-3"><input class="form-control" id="last" type="text" onblur="checkLast();"></div>
+                            <div class="col-md-3"><span id="last_Check"></span></div>
+                        </div>
+                        <div class="row" style="padding-top: 5px;">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3">Телефон</div>
+                            <div class="col-md-3"><input class="form-control" id="phone" type="text" onblur="checkPhone();" placeholder="xxx-xxx-xxx" required /></div>
+                            <div class="col-md-3"><span id="phone_Check"></span></div>
+                        </div>
+                        <div class="row" style="padding-top: 5px;">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3">e-mail</div>
+                            <div class="col-md-3"><input class="form-control" id="e-mail" type="text" placeholder="example@example.com" required=""></div>
+                            <div class="col-md-3"></div>
+                        </div>
+                        <div class="row" style="padding-top: 5px;">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3">Тема</div>
+                            <div class="col-md-3">                                    
+                                <select class="form-control" name="paymethod" id="paymethod" required="">
+                                    <option>Способ оплаты</option>
+                                    <option>Проблема при оплате</option>
+                                    <option>Другое</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                        
+                        <div class="row" style="padding-top: 5px;">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3">
+                            <button type="submit" class="btn btn-md btn-block btn-danger-gradiant text-white border-0"  style="border: solid 1px #1eae4f;    color: #1eae4f"><span>Отправить</span></button>
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                    
+                </div>
+                <!--End of the form-->
+            </div>
+        </div>            
+    </form>
+   
+
+    <script src="jquery-min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    
+</body>
+
+    <footer">
+        <hr>
+        <p style="text-align: center; color: gray;">Copyright</p>
+    </footer>
+   
+</html>
